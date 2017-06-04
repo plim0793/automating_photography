@@ -1,0 +1,15 @@
+
+# Ignore the data folder
+data/
+
+# Ipython Notebook
+.ipynb_checkpoints
+
+# OSX Filesystem thing
+.DS_Store
+
+# Other File Types
+*.csv
+*.zip
+*.json
+*.pkl
