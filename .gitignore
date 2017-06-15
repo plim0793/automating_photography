@@ -13,3 +13,4 @@ data/
 *.zip
 *.json
 *.pkl
+*.h5
