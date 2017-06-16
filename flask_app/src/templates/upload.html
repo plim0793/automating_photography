@@ -13,6 +13,11 @@
 
 {% if msg %}
 <h1 id="msg">{{ msg }}</h1>
+{% if image_list %}
+{% for image in image_list %}
+<img src="static/images/{{ image }}">
+{% endfor %}
+{% endif %}
 {% endif %}
 
 </body>
