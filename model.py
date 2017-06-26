@@ -170,13 +170,13 @@ def augment(image_path, new_path, repeat=5):
         
         if not os.path.isdir(new_path):
             os.makedirs(new_path)
-            logger.info("Created {} directory".format(new_path))
+            logger.info("Created {} directory".format(str(new_path)))
             
         cropped_img_path = os.path.join(new_path, str(uuid.uuid4()) + '.jpg')
         cropped_img = cv2.imwrite(cropped_img_path, cropped_arr)
         
         if not cropped_img:
-            logger.info("Check image path: ", cropped_img_path)
+            logger.info("Check image path: {}".format(str(cropped_img_path)))
             if os.path.isfile(cropped_img_path):
                 os.remove(cropped_img_path)
             continue
@@ -202,7 +202,7 @@ def get_files(paths, with_augment=False, aug_file_path=None):
         if os.path.isdir(path):
             clean_files += [path + f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
         else:
-            logger.error("{} is invalid.".format(path))
+            logger.error("{} is invalid.".format(str(path)))
             
     if with_augment:
         if aug_file_path:
@@ -444,7 +444,7 @@ def get_frames(file_path, top_layer, bottom_layers, path, sim_threshold, good_th
                 good_frames_count += 1
 
                 pred = np.delete(pred, np.argmax(pred))
-                logger.info("File Path: {}".format(file_path))
+                logger.info("File Path: {}".format(str(file_path)))
                 feature_vec_list = []
                 orig_frames = []
         else:
