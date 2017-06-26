@@ -32,6 +32,14 @@ logger = logging.getLogger(__name__)
 
 logger.info("BACKEND: {}".format(str(keras.backend.backend())))
 
+handler = logging.FileHandler('logging_records.log')
+handler.setLevel(logging.INFO)
+
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+
+logger.addHandler(handler)
+
 #### HELPER FUNCTIONS ####
 def use_instagram_scraper(list_of_directories):
     '''
