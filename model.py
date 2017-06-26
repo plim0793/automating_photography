@@ -501,33 +501,33 @@ def main(scrape=False, move=False):
 	if scrape:
 		list_of_usernames_directories = use_instagram_scraper(LIST_OF_USERNAME_DIRECTORIES)
 
-		clean_files, aug_files = get_files(list_of_usernames_directories,/
-											with_augment=True,/
-											aug_file_path=AUG_FILE_DIR/
+		clean_files, aug_files = get_files(list_of_usernames_directories, \
+											with_augment=True, \
+											aug_file_path=AUG_FILE_DIR \
 											)
 	else:
-		clean_files, aug_files = get_files(LIST_OF_USERNAME_DIRECTORIES,/
-											with_augment=True,/
-											aug_file_path=AUG_FILE_DIR/
+		clean_files, aug_files = get_files(LIST_OF_USERNAME_DIRECTORIES, \
+											with_augment=True, \
+											aug_file_path=AUG_FILE_DIR \
 											)
 	if move:
-		success_clean = move_files(clean_files,/
-									[0.7,0.2,0.1],/
+		success_clean = move_files(clean_files, \
+									[0.7,0.2,0.1], \
 									CLEAN_DATA_DIR)
 
-		success_aug = move_files(aug_files,/
-								[0.7,0.2,0.1],/
+		success_aug = move_files(aug_files, \
+								[0.7,0.2,0.1], \
 								AUG_DATA_DIR)
 
-	generators = get_generators(rescale=False, /
-								image_gen=None, /
-								train_dir=TRAIN_DIR, /
+	generators = get_generators(rescale=False, \
+								image_gen=None, \
+								train_dir=TRAIN_DIR, \
 								test_dir=TEST_DIR)
 
 	model = get_model(input_shape=(224,224,3))
-	fit_model = train_model(model,/
-							nb_epoch=15,/
-							generators=generators,/
+	fit_model = train_model(model, \
+							nb_epoch=15, \
+							generators=generators, \
 							model_dir=DATA_DIR)
 
 	bot, top = split_model(model=keras.models.load_model('data/model.h5'))
@@ -535,12 +535,12 @@ def main(scrape=False, move=False):
 	logging.Logger.info("BEFORE GET_FRAMES: ")
 	logging.Logger.info(datetime.datetime.now())
 
-	snap = get_frames(VID_PATH,/
-						top_layer=top,/
-						bottom_layers=bot,/
-						path=GOOD_PATH,/
-						sim_threshold=SIM_THRESHOLD,/
-						good_threshold=GOOD_THRESHOLD,/
+	snap = get_frames(VID_PATH, \
+						top_layer=top, \
+						bottom_layers=bot, \
+						path=GOOD_PATH, \
+						sim_threshold=SIM_THRESHOLD, \
+						good_threshold=GOOD_THRESHOLD, \
 						consecutive=CONSECUTIVE)
 
 	logging.Logger.info("AFTER GET_FRAMES: ")
