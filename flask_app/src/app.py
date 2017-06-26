@@ -8,9 +8,24 @@ import datetime
 import re
 import tensorflow as tf
 from keras import backend as K
+import keras
+import logging
 K.set_image_dim_ordering('tf')
 
-def get_frames(file_path, top_layer, bottom_layers, path, threshold):
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+logger.info("BACKEND: {}".format(str(keras.backend.backend())))
+
+handler = logging.FileHandler('logging_records.log')
+handler.setLevel(logging.INFO)
+
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+handler.setFormatter(formatter)
+
+logger.addHandler(handler)
+
+def get_frames(file_path, top_layer, bottom_layers, path, sim_threshold, good_threshold, consecutive):
     '''
     DESCRIPTION:
         - Given a video file, this function predicts frame-by-frame if the picture is "good" or "bad".
@@ -24,7 +39,7 @@ def get_frames(file_path, top_layer, bottom_layers, path, threshold):
     try:
         vid = imageio.get_reader(file_path)
     except:
-        print("Invalid video file")
+        logger.error("Invalid video file")
         return None
     
     feature_vec_list = []
@@ -32,41 +47,80 @@ def get_frames(file_path, top_layer, bottom_layers, path, threshold):
     good_frames = []
     curr_feat_vec = []
     
+    frame_count = 0
     good_count = 0
     good_frames_count = 0
+    
+    if os.path.isdir(path):
+        shutil.rmtree(path, ignore_errors=True)
+        
+    os.makedirs(path)
 
     for i in range(vid.get_length()):
         try:
             frame = vid.get_data(i)
         except:
-            print("Frame could not be read.")
+            logger.warning("Frame could not be read.")
             continue
 
         resized = np.array([cv2.resize(frame, (224, 224)).astype(np.float32)])
         feat_vec = bottom_layers.predict(resized)
+        
         if curr_feat_vec == []:
             curr_feat_vec = feat_vec
 
-        if cosine_similarity(curr_feat_vec, feat_vec) > threshold or len(feature_vec_list) == 0:
+        if cosine_similarity(curr_feat_vec, feat_vec) > sim_threshold or len(feature_vec_list) == 0:
             feature_vec_list.append(feat_vec)
             orig_frames.append(frame)
             curr_feat_vec = feat_vec
-        else:
-            print("LENGTH OF CURRENT SCENE: {}".format(len(feature_vec_list)))
-            pred = top_layer.predict(np.array(feature_vec_list))
-            if not os.path.isdir(path):
-                os.mkdir(path)
+            if len(feature_vec_list) == consecutive:
+                logger.info("LENGTH OF CURRENT SCENE (CONSECUTIVE): {}".format(str(len(feature_vec_list))))
+                pred = top_layer.predict(np.array(feature_vec_list))
+                if pred[np.argmax(pred)] < good_threshold:
+                    feature_vec_list = []
+                    orig_frames = []
+                    continue
+                if good_frames_count < 10:
+                    file_path = os.path.join(path, "000" + str(good_frames_count) + "_" + str(uuid.uuid4()) + '.jpg')
+                elif good_frames_count < 100:
+                    file_path = os.path.join(path, "00" + str(good_frames_count) + "_" + str(uuid.uuid4()) + '.jpg')
+                else:
+                    file_path = os.path.join(path, "0" + str(good_frames_count) + "_" + str(uuid.uuid4()) + '.jpg')
+                orig_frames[np.argmax(pred)] = cv2.cvtColor(orig_frames[np.argmax(pred)], cv2.COLOR_RGB2BGR)    
+                cv2.imwrite(file_path, orig_frames[np.argmax(pred)])
+                good_frames.append(orig_frames[np.argmax(pred)])
+                good_frames_count += 1
 
-            file_path = os.path.join(path, str(good_frames_count) + str(uuid.uuid4()) + '.jpg')
+                pred = np.delete(pred, np.argmax(pred))
+                logger.info("File Path: {}".format(str(file_path)))
+                feature_vec_list = []
+                orig_frames = []
+        else:
+            logger.info("LENGTH OF CURRENT SCENE (CHANGE): {}".format(str(len(feature_vec_list))))
+            pred = top_layer.predict(np.array(feature_vec_list))
+            if pred[np.argmax(pred)] < good_threshold:
+                feature_vec_list = []
+                orig_frames = []
+                continue
+            if good_frames_count < 10:
+                file_path = os.path.join(path, "000" + str(good_frames_count) + "_" + str(uuid.uuid4()) + '.jpg')
+            elif good_frames_count < 100:
+                file_path = os.path.join(path, "00" + str(good_frames_count) + "_" + str(uuid.uuid4()) + '.jpg')
+            else:
+                file_path = os.path.join(path, "0" + str(good_frames_count) + "_" + str(uuid.uuid4()) + '.jpg')
+            
+            orig_frames[np.argmax(pred)] = cv2.cvtColor(orig_frames[np.argmax(pred)], cv2.COLOR_RGB2BGR)
             cv2.imwrite(file_path, orig_frames[np.argmax(pred)])
             good_frames.append(orig_frames[np.argmax(pred)])
             good_frames_count += 1
-            print("File Path: {}".format(file_path))
+
+            pred = np.delete(pred, np.argmax(pred))
+            logger.info("File Path: {}".format(str(file_path)))
 
             feature_vec_list = []
             orig_frames = []
 
-    print("Good Frames Count: {}".format(good_frames_count))
+    logger.info("Good Frames Count: {}".format(str(good_frames_count)))
 
     return good_frames
 
