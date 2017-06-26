@@ -27,7 +27,10 @@ import logging
 import matplotlib.pyplot as plt
 from IPython.display import clear_output
 
-logging.Logger.info("BACKEND: ", keras.backend.backend())
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+logger.info("BACKEND: ", keras.backend.backend())
 
 #### HELPER FUNCTIONS ####
 def use_instagram_scraper(list_of_directories):
@@ -44,9 +47,9 @@ def use_instagram_scraper(list_of_directories):
     		username = re.sub('data/','',directory)
     		username = re.sub('/', '', username)
     		subprocess.call(['instagram-scraper', '-d', directory, username])
-    		logging.Logger.info("Username: {}".format(username))
+    		logger.info("Username: {}".format(username))
     	except:
-    		logging.Logger.error("Could not scrape into {}".format(directory))
+    		logger.error("Could not scrape into {}".format(directory))
     		list_of_usernames_directories.remove(directory)
 
     return list_of_directories
@@ -165,7 +168,7 @@ def augment(image_path, new_path, repeat=5):
         cropped_img = cv2.imwrite(cropped_img_path, cropped_arr)
         
         if not cropped_img:
-            logging.Logger.info("Check image path: ", cropped_img_path)
+            logger.info("Check image path: ", cropped_img_path)
             if os.path.isfile(cropped_img_path):
                 os.remove(cropped_img_path)
             continue
@@ -191,7 +194,7 @@ def get_files(paths, with_augment=False, aug_file_path=None):
         if os.path.isdir(path):
             clean_files += [path + f for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
         else:
-            logging.Logger.error("{} is invalid.".format(path))
+            logger.error("{} is invalid.".format(path))
             
     if with_augment:
         if aug_file_path:
@@ -204,7 +207,7 @@ def get_files(paths, with_augment=False, aug_file_path=None):
             aug_files = [aug_file_path + f for f in os.listdir(aug_file_path) if os.path.isfile(os.path.join(aug_file_path, f))]
             return clean_files, aug_files
     else:
-        logging.Logger.error("Enter in a directory to save augmented images.")
+        logger.error("Enter in a directory to save augmented images.")
         return clean_files
 
 def move_files(file_paths, perc_list, dir_list):
@@ -221,10 +224,10 @@ def move_files(file_paths, perc_list, dir_list):
         - If augment is False, then only one list of file paths are given.
     '''
     if len(perc_list) > len(dir_list):
-        logging.Logger.warning("Warning: more percentages ({}) than available directories ({})".format(len(perc_list, len(dir_list))))
+        logger.warning("Warning: more percentages ({}) than available directories ({})".format(len(perc_list, len(dir_list))))
     
     if len(perc_list) < len(dir_list):
-        logging.Logger.error("Error: Too few percentages.")
+        logger.error("Error: Too few percentages.")
         return False
     
     for i, d in enumerate(dir_list):
@@ -254,11 +257,11 @@ def get_generators(train_dir, test_dir, rescale=False, image_gen=None):
         - train_gen and test_gen are outputted
     '''
     if not os.path.isdir(train_dir):
-        logging.Logger.error("Error: invalid train data directory.")
+        logger.error("Error: invalid train data directory.")
         return False
     
     if not os.path.isdir(test_dir):
-        logging.Logger.error("Error: invalid test data directory.")
+        logger.error("Error: invalid test data directory.")
         return False 
     
     if not rescale:
@@ -267,7 +270,7 @@ def get_generators(train_dir, test_dir, rescale=False, image_gen=None):
         try:
             train_gen = image_gen
         except:
-            logging.Logger.error("Please input a valid generator.")
+            logger.error("Please input a valid generator.")
             return False
     test_datagen = image.ImageDataGenerator(rescale=1./255)
     
@@ -380,7 +383,7 @@ def get_frames(file_path, top_layer, bottom_layers, path, sim_threshold, good_th
     try:
         vid = imageio.get_reader(file_path)
     except:
-        logging.Logger.error("Invalid video file")
+        logger.error("Invalid video file")
         return None
     
     feature_vec_list = []
@@ -401,7 +404,7 @@ def get_frames(file_path, top_layer, bottom_layers, path, sim_threshold, good_th
         try:
             frame = vid.get_data(i)
         except:
-            logging.Logger.warning("Frame could not be read.")
+            logger.warning("Frame could not be read.")
             continue
 
         resized = np.array([cv2.resize(frame, (224, 224)).astype(np.float32)])
@@ -415,7 +418,7 @@ def get_frames(file_path, top_layer, bottom_layers, path, sim_threshold, good_th
             orig_frames.append(frame)
             curr_feat_vec = feat_vec
             if len(feature_vec_list) == consecutive:
-                logging.Logger.info("LENGTH OF CURRENT SCENE (CONSECUTIVE): {}".format(len(feature_vec_list)))
+                logger.info("LENGTH OF CURRENT SCENE (CONSECUTIVE): {}".format(len(feature_vec_list)))
                 pred = top_layer.predict(np.array(feature_vec_list))
                 if pred[np.argmax(pred)] < good_threshold:
                     feature_vec_list = []
@@ -433,11 +436,11 @@ def get_frames(file_path, top_layer, bottom_layers, path, sim_threshold, good_th
                 good_frames_count += 1
 
                 pred = np.delete(pred, np.argmax(pred))
-                logging.Logger.info("File Path: {}".format(file_path))
+                logger.info("File Path: {}".format(file_path))
                 feature_vec_list = []
                 orig_frames = []
         else:
-            logging.Logger.info("LENGTH OF CURRENT SCENE (CHANGE): {}".format(len(feature_vec_list)))
+            logger.info("LENGTH OF CURRENT SCENE (CHANGE): {}".format(len(feature_vec_list)))
             pred = top_layer.predict(np.array(feature_vec_list))
             if pred[np.argmax(pred)] < good_threshold:
                 feature_vec_list = []
@@ -456,12 +459,12 @@ def get_frames(file_path, top_layer, bottom_layers, path, sim_threshold, good_th
             good_frames_count += 1
 
             pred = np.delete(pred, np.argmax(pred))
-            logging.Logger.info("File Path: {}".format(file_path))
+            logger.info("File Path: {}".format(file_path))
 
             feature_vec_list = []
             orig_frames = []
 
-    logging.Logger.info("Good Frames Count: {}".format(good_frames_count))
+    logger.info("Good Frames Count: {}".format(good_frames_count))
 
     return good_frames
 
@@ -532,8 +535,8 @@ def main(scrape=False, move=False):
 
 	bot, top = split_model(model=keras.models.load_model('data/model.h5'))
 
-	logging.Logger.info("BEFORE GET_FRAMES: ")
-	logging.Logger.info(datetime.datetime.now())
+	logger.info("BEFORE GET_FRAMES: ")
+	logger.info(datetime.datetime.now())
 
 	snap = get_frames(VID_PATH, \
 						top_layer=top, \
@@ -543,8 +546,8 @@ def main(scrape=False, move=False):
 						good_threshold=GOOD_THRESHOLD, \
 						consecutive=CONSECUTIVE)
 
-	logging.Logger.info("AFTER GET_FRAMES: ")
-	logging.Logger.info(datetime.datetime.now())
+	logger.info("AFTER GET_FRAMES: ")
+	logger.info(datetime.datetime.now())
 
 	return snap, model
 
