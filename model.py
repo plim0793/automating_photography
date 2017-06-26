@@ -80,11 +80,11 @@ def rotate_img(orig_img, deg_rot, scale):
     '''
     (height, width) = orig_img.shape[:2]
     center = (width/2, height/2)
-    matrix = cv2.getRotationMatrix2D(center,/
-    								angle=deg_rot,/
+    matrix = cv2.getRotationMatrix2D(center, \
+    								angle=deg_rot, \
     								scale=scale)
-    rotated_img = cv2.warpAffine(orig_img,/
-    							matrix,/
+    rotated_img = cv2.warpAffine(orig_img, \
+    							matrix, \
     							(width, height))
     
     return rotated_img
@@ -271,14 +271,14 @@ def get_generators(train_dir, test_dir, rescale=False, image_gen=None):
             return False
     test_datagen = image.ImageDataGenerator(rescale=1./255)
     
-    train_gen = train_datagen.flow_from_directory(train_dir,/
-    												target_size=(224,224),/
-    												batch_size=100,/
+    train_gen = train_datagen.flow_from_directory(train_dir, \
+    												target_size=(224,224), \
+    												batch_size=100, \
     												class_mode='binary')
     
-    test_gen = test_datagen.flow_from_directory(test_dir,/
-    											target_size=(224,224),/
-    											batch_size=100,/
+    test_gen = test_datagen.flow_from_directory(test_dir, \
+    											target_size=(224,224), \
+    											batch_size=100, \
     											class_mode='binary')
     
     return train_gen, test_gen
@@ -466,17 +466,17 @@ def get_frames(file_path, top_layer, bottom_layers, path, sim_threshold, good_th
     return good_frames
 
 #### GLOBAL VARIABLES ####
-LIST_OF_USERNAME_DIRECTORIES = ['data/earthpix/',/
-								'data/beautifuldestinations/',/
-								'data/vsco/',/
-								'data/humansofamsterdam/',/
-								'data/officialhumansofbombay/',/
-								'data/humansofnewtown/',/
-								'data/humansofny/',/
-								'data/humansofpdx/',/
-								'data/humansofseoul/',/
-								'data/citiesofmyworld/',/
-								'data/beautifullpllaces/',/
+LIST_OF_USERNAME_DIRECTORIES = ['data/earthpix/', \
+								'data/beautifuldestinations/', \
+								'data/vsco/', \
+								'data/humansofamsterdam/', \
+								'data/officialhumansofbombay/', \
+								'data/humansofnewtown/', \
+								'data/humansofny/', \
+								'data/humansofpdx/', \
+								'data/humansofseoul/', \
+								'data/citiesofmyworld/', \
+								'data/beautifullpllaces/', \
 								'data/wonderful_places/']
 
 AUG_FILE_DIR = 'data/aug_images/'
