@@ -92,11 +92,11 @@ def rotate_img(orig_img, deg_rot, scale):
     (height, width) = orig_img.shape[:2]
     center = (width/2, height/2)
     matrix = cv2.getRotationMatrix2D(center, \
-    								angle=deg_rot, \
-    								scale=scale)
+    				angle=deg_rot, \
+    				scale=scale)
     rotated_img = cv2.warpAffine(orig_img, \
-    							matrix, \
-    							(width, height))
+    				matrix, \
+    				(width, height))
     
     return rotated_img
 
@@ -232,7 +232,7 @@ def move_files(file_paths, perc_list, dir_list):
         - If augment is False, then only one list of file paths are given.
     '''
     if len(perc_list) > len(dir_list):
-        logger.warning("Warning: more percentages ({}) than available directories ({})".format(str(len(perc_list), str(len(dir_list)))))
+        logger.warning("Warning: more percentages ({}) than available directories ({})".format(str(len(perc_list)), str(len(dir_list))))
     
     if len(perc_list) < len(dir_list):
         logger.error("Error: Too few percentages.")
@@ -283,14 +283,14 @@ def get_generators(train_dir, test_dir, rescale=False, image_gen=None):
     test_datagen = image.ImageDataGenerator(rescale=1./255)
     
     train_gen = train_datagen.flow_from_directory(train_dir, \
-    												target_size=(224,224), \
-    												batch_size=100, \
-    												class_mode='binary')
+    						target_size=(224,224), \
+    						batch_size=100, \
+    						class_mode='binary')
     
     test_gen = test_datagen.flow_from_directory(test_dir, \
-    											target_size=(224,224), \
-    											batch_size=100, \
-    											class_mode='binary')
+    						target_size=(224,224), \
+    						batch_size=100, \
+    						class_mode='binary')
     
     return train_gen, test_gen
 
@@ -476,83 +476,54 @@ def get_frames(file_path, top_layer, bottom_layers, path, sim_threshold, good_th
 
     return good_frames
 
-#### GLOBAL VARIABLES ####
-LIST_OF_USERNAME_DIRECTORIES = ['data/earthpix/', \
-								'data/beautifuldestinations/', \
-								'data/vsco/', \
-								'data/humansofamsterdam/', \
-								'data/officialhumansofbombay/', \
-								'data/humansofnewtown/', \
-								'data/humansofny/', \
-								'data/humansofpdx/', \
-								'data/humansofseoul/', \
-								'data/citiesofmyworld/', \
-								'data/beautifullpllaces/', \
-								'data/wonderful_places/']
-
-AUG_FILE_DIR = 'data/aug_images/'
-
-CLEAN_DATA_DIR = ['data/train_data/clean/','data/test_data/clean/','data/holdout_data/clean/']
-AUG_DATA_DIR = ['data/train_data/aug/','data/test_data/aug/','data/holdout_data/aug/']
-
-TRAIN_DIR = 'data/train_data'
-TEST_DIR = 'data/test_data'
-
-DATA_DIR = 'data'
-
-VID_PATH = 'data/sunrise.mp4'
-GOOD_PATH = 'data/good_photos/sunrise/'
-BAD_PATH = 'data/good_photos/sunrise_bad/'
-
-SIM_THRESHOLD = 0.50
-GOOD_THRESHOLD = 0.95
-CONSECUTIVE = 10
-
-def main(scrape=True, move=True):
+def main(scrape=True, move=True, train_model=True, vid_analyze=True):
 	if scrape:
 		list_of_usernames_directories = use_instagram_scraper(LIST_OF_USERNAME_DIRECTORIES)
 
 		clean_files, aug_files = get_files(list_of_usernames_directories, \
-											with_augment=True, \
-											aug_file_path=AUG_FILE_DIR \
-											)
+						with_augment=True, \
+						aug_file_path=AUG_FILE_DIR \
+						)
 	else:
 		clean_files, aug_files = get_files(LIST_OF_USERNAME_DIRECTORIES, \
-											with_augment=True, \
-											aug_file_path=AUG_FILE_DIR \
-											)
+						with_augment=True, \
+						aug_file_path=AUG_FILE_DIR \
+						)
 	if move:
 		success_clean = move_files(clean_files, \
-									[0.7,0.2,0.1], \
-									CLEAN_DATA_DIR)
+					[0.7,0.2,0.1], \
+					CLEAN_DATA_DIR)
 
 		success_aug = move_files(aug_files, \
-								[0.7,0.2,0.1], \
-								AUG_DATA_DIR)
+					[0.7,0.2,0.1], \
+					AUG_DATA_DIR)
+	if train_model:
+		generators = get_generators(rescale=False, \
+					image_gen=None, \
+					train_dir=TRAIN_DIR, \
+					test_dir=TEST_DIR)
 
-	generators = get_generators(rescale=False, \
-								image_gen=None, \
-								train_dir=TRAIN_DIR, \
-								test_dir=TEST_DIR)
+		model = get_model(input_shape=(224,224,3))
+		fit_model = train_model(model, \
+					nb_epoch=15, \
+					generators=generators, \
+					model_dir=DATA_DIR)
 
-	model = get_model(input_shape=(224,224,3))
-	fit_model = train_model(model, \
-							nb_epoch=15, \
-							generators=generators, \
-							model_dir=DATA_DIR)
-
-	bot, top = split_model(model=keras.models.load_model('data/model.h5'))
-
+		bot, top = split_model(model=fit_model)
+	else:
+		model = keras.models.load_model('data/model.h5')  
+		bot, top = split_model(model=model)
+	
 	logger.info("BEFORE GET_FRAMES: ")
 	logger.info(str(datetime.datetime.now()))
 
 	snap = get_frames(VID_PATH, \
-						top_layer=top, \
-						bottom_layers=bot, \
-						path=GOOD_PATH, \
-						sim_threshold=SIM_THRESHOLD, \
-						good_threshold=GOOD_THRESHOLD, \
-						consecutive=CONSECUTIVE)
+			top_layer=top, \
+			bottom_layers=bot, \
+			path=GOOD_PATH, \
+			sim_threshold=SIM_THRESHOLD, \
+			good_threshold=GOOD_THRESHOLD, \
+			consecutive=CONSECUTIVE)
 
 	logger.info("AFTER GET_FRAMES: ")
 	logger.info(str(datetime.datetime.now()))
@@ -562,5 +533,37 @@ def main(scrape=True, move=True):
 
 
 if __name__ == '__main__':
-	good_photographs, fin_model = main()
+
+	#### GLOBAL VARIABLES ####
+	LIST_OF_USERNAME_DIRECTORIES = ['data/earthpix/', \
+					'data/beautifuldestinations/', \
+					'data/vsco/', \
+					'data/humansofamsterdam/', \
+					'data/officialhumansofbombay/', \
+					'data/humansofnewtown/', \
+					'data/humansofny/', \
+					'data/humansofpdx/', \
+					'data/humansofseoul/', \
+					'data/citiesofmyworld/', \
+					'data/beautifullpllaces/', \
+					'data/wonderful_places/']
+
+	AUG_FILE_DIR = 'data/aug_images/'
+
+	CLEAN_DATA_DIR = ['data/train_data/clean/','data/test_data/clean/','data/holdout_data/clean/']
+	AUG_DATA_DIR = ['data/train_data/aug/','data/test_data/aug/','data/holdout_data/aug/']
+
+	TRAIN_DIR = 'data/train_data'
+	TEST_DIR = 'data/test_data'
+
+	DATA_DIR = 'data'
+
+	VID_PATH = 'data/sky_hq.mp4'
+	GOOD_PATH = 'data/good_photos/sky/'
+
+	SIM_THRESHOLD = 0.50
+	GOOD_THRESHOLD = 0.95
+	CONSECUTIVE = 300
+
+	good_photographs, fin_model = main(scrape=False, move=False, train_model=False, vid_analyze=True)
 

@@ -1,0 +1,332 @@
+2017-06-26 16:09:49,586 - __main__ - ERROR - data/earthpix/ is invalid.
+2017-06-26 16:09:49,586 - __main__ - ERROR - data/beautifuldestinations/ is invalid.
+2017-06-26 16:09:49,587 - __main__ - ERROR - data/vsco/ is invalid.
+2017-06-26 16:09:49,587 - __main__ - ERROR - data/humansofamsterdam/ is invalid.
+2017-06-26 16:09:49,587 - __main__ - ERROR - data/officialhumansofbombay/ is invalid.
+2017-06-26 16:09:49,587 - __main__ - ERROR - data/humansofnewtown/ is invalid.
+2017-06-26 16:09:49,587 - __main__ - ERROR - data/humansofny/ is invalid.
+2017-06-26 16:09:49,587 - __main__ - ERROR - data/humansofpdx/ is invalid.
+2017-06-26 16:09:49,587 - __main__ - ERROR - data/humansofseoul/ is invalid.
+2017-06-26 16:09:49,587 - __main__ - ERROR - data/citiesofmyworld/ is invalid.
+2017-06-26 16:09:49,587 - __main__ - ERROR - data/beautifullpllaces/ is invalid.
+2017-06-26 16:09:49,587 - __main__ - ERROR - data/wonderful_places/ is invalid.
+2017-06-26 16:09:49,587 - __main__ - ERROR - Error: invalid train data directory.
+2017-06-26 16:12:44,662 - __main__ - INFO - Username: earthpix
+2017-06-26 16:15:23,605 - __main__ - INFO - Username: beautifuldestinations
+2017-06-26 16:16:22,107 - __main__ - INFO - Username: vsco
+2017-06-26 16:16:41,579 - __main__ - INFO - Username: humansofamsterdam
+2017-06-26 16:17:00,965 - __main__ - INFO - Username: officialhumansofbombay
+2017-06-26 16:17:13,539 - __main__ - INFO - Username: humansofnewtown
+2017-06-26 16:18:32,663 - __main__ - INFO - Username: humansofny
+2017-06-26 16:18:48,476 - __main__ - INFO - Username: humansofpdx
+2017-06-26 16:18:58,824 - __main__ - INFO - Username: humansofseoul
+2017-06-26 16:19:28,304 - __main__ - INFO - Username: citiesofmyworld
+2017-06-26 16:19:57,316 - __main__ - INFO - Username: beautifullpllaces
+2017-06-26 16:22:01,395 - __main__ - INFO - Username: wonderful_places
+2017-06-26 16:34:56,001 - __main__ - INFO - Username: earthpix
+2017-06-26 16:37:14,995 - __main__ - INFO - Username: beautifuldestinations
+2017-06-26 16:38:12,215 - __main__ - INFO - Username: vsco
+2017-06-26 16:38:29,430 - __main__ - INFO - Username: humansofamsterdam
+2017-06-26 16:38:48,387 - __main__ - INFO - Username: officialhumansofbombay
+2017-06-26 16:39:00,691 - __main__ - INFO - Username: humansofnewtown
+2017-06-26 16:40:22,276 - __main__ - INFO - Username: humansofny
+2017-06-26 16:40:34,464 - __main__ - INFO - Username: humansofpdx
+2017-06-26 16:40:43,876 - __main__ - INFO - Username: humansofseoul
+2017-06-26 16:41:08,919 - __main__ - INFO - Username: citiesofmyworld
+2017-06-26 16:41:35,733 - __main__ - INFO - Username: beautifullpllaces
+2017-06-26 16:43:19,634 - __main__ - INFO - Username: wonderful_places
+2017-06-26 16:43:47,906 - __main__ - INFO - Check image path: data/aug_images/06d4c69a-b17c-433a-a8b2-c95167ee9113.jpg
+2017-06-26 16:45:46,196 - __main__ - INFO - Check image path: data/aug_images/9d5fb6c9-146e-481c-b9eb-f4e4d1b6cbbe.jpg
+2017-06-26 16:47:40,317 - __main__ - INFO - Check image path: data/aug_images/d3330a93-1d56-4ed2-a35c-0488b8a88990.jpg
+2017-06-26 16:49:00,698 - __main__ - INFO - Check image path: data/aug_images/5acc0c14-8ddf-4b48-9732-6496074b2dc2.jpg
+2017-06-26 16:59:31,010 - __main__ - INFO - Check image path: data/aug_images/dfc1893f-7d8c-4951-8852-f7d72f35b10b.jpg
+2017-06-26 17:09:21,518 - __main__ - INFO - Check image path: data/aug_images/7670780a-ae64-4af6-b6eb-85622ae810d9.jpg
+2017-06-26 17:11:03,243 - __main__ - INFO - Check image path: data/aug_images/7860d3e5-6a88-4618-a285-d3298e780f79.jpg
+2017-06-26 17:13:16,846 - __main__ - INFO - Check image path: data/aug_images/a3c1f62f-7382-48a2-a78e-2ae7e0549d38.jpg
+2017-06-26 17:17:34,210 - __main__ - INFO - Check image path: data/aug_images/4eeee4db-ae3c-4960-b427-9ad7afd148b9.jpg
+2017-06-26 17:24:00,203 - __main__ - INFO - Check image path: data/aug_images/2a29b9a2-1db1-4673-9d3f-6615fdd965b7.jpg
+2017-06-26 17:24:22,288 - __main__ - INFO - Check image path: data/aug_images/0107e4e6-704f-461b-8480-6d2f9ebf6e0a.jpg
+2017-06-26 17:34:23,797 - __main__ - INFO - Check image path: data/aug_images/14f964f9-f69b-4eef-a2b4-9f0783bf2fb8.jpg
+2017-06-26 17:34:33,594 - __main__ - INFO - Check image path: data/aug_images/e7413723-acee-4d11-b272-4aa2d434e7ab.jpg
+2017-06-26 17:42:44,772 - __main__ - INFO - Check image path: data/aug_images/be4c9390-1a0e-40bf-b938-899be9bf01f5.jpg
+2017-06-26 17:48:33,354 - __main__ - INFO - Check image path: data/aug_images/13e2bb96-343d-4b55-a00f-9017673c481f.jpg
+2017-06-26 17:55:17,387 - __main__ - INFO - Check image path: data/aug_images/adb34b97-7927-4bbb-8dc5-452e5494170b.jpg
+2017-06-26 18:02:16,497 - __main__ - INFO - Check image path: data/aug_images/885180c3-d3df-4851-97e6-95c08d413f3b.jpg
+2017-06-26 18:04:34,862 - __main__ - INFO - Check image path: data/aug_images/c5d887f1-8e4b-446f-bc24-dd6a9aaa7e2f.jpg
+2017-06-26 18:06:44,392 - __main__ - INFO - Check image path: data/aug_images/08cc9092-09f0-41dd-bebc-ec9f10dbf104.jpg
+2017-06-26 18:06:59,378 - __main__ - INFO - Check image path: data/aug_images/d62e0e94-5a3d-4cd2-92dc-b5a5ccff279a.jpg
+2017-06-26 18:11:05,010 - __main__ - INFO - Check image path: data/aug_images/b4a85640-1c9d-48bd-849c-71aaaec59400.jpg
+2017-06-26 18:12:42,029 - __main__ - INFO - Check image path: data/aug_images/eb5fef48-e84f-4a9d-881b-167c8cf3e7f7.jpg
+2017-06-26 18:15:29,729 - __main__ - INFO - Check image path: data/aug_images/b347415f-3150-494f-bdd6-da0910e3ab0d.jpg
+2017-06-26 18:18:01,232 - __main__ - INFO - Check image path: data/aug_images/834604b0-de4a-4a3e-b9c4-9b702ba20dc5.jpg
+2017-06-26 18:18:41,309 - __main__ - INFO - Check image path: data/aug_images/eaef9677-ae3d-405a-90fa-c14246b4d8fc.jpg
+2017-06-26 18:19:21,810 - __main__ - INFO - Check image path: data/aug_images/0ee51988-d408-46cb-80b5-dde115038c86.jpg
+2017-06-26 18:19:51,212 - __main__ - INFO - Check image path: data/aug_images/52b4b7b5-6783-4808-99a2-be154c95164c.jpg
+2017-06-26 18:25:01,088 - __main__ - INFO - Check image path: data/aug_images/d0a87c89-7688-464d-93e1-53904eb18d3b.jpg
+2017-06-26 18:26:27,279 - __main__ - INFO - Check image path: data/aug_images/dd0b264e-0ac8-4f53-8890-eaba786d434d.jpg
+2017-06-26 18:27:44,038 - __main__ - INFO - Check image path: data/aug_images/e5e92c0f-80e9-4180-8522-95379eb4d035.jpg
+2017-06-26 18:35:48,534 - __main__ - INFO - Check image path: data/aug_images/8beb57cb-1187-4114-bcca-fee60d757c1b.jpg
+2017-06-26 18:35:54,873 - __main__ - INFO - Check image path: data/aug_images/90928533-2e3a-4669-a79c-24328d070f44.jpg
+2017-06-26 18:43:13,652 - __main__ - INFO - Check image path: data/aug_images/1202e5ef-31e7-47b3-bcb8-3f9f41b47830.jpg
+2017-06-26 18:43:26,677 - __main__ - INFO - Check image path: data/aug_images/f580c2d8-c4e3-4498-88c6-73e70793dc3a.jpg
+2017-06-26 18:44:04,761 - __main__ - INFO - Check image path: data/aug_images/21fcd7a4-5c23-498e-82dc-397ac8d7d1da.jpg
+2017-06-26 18:49:57,205 - __main__ - INFO - Check image path: data/aug_images/4d3871cc-1ec1-4e53-aa13-2b3950f4b807.jpg
+2017-06-26 18:50:04,396 - __main__ - INFO - Check image path: data/aug_images/3d3ba7fd-868b-43bb-9486-7dcada7cd2d9.jpg
+2017-06-26 18:57:20,437 - __main__ - INFO - Check image path: data/aug_images/eb92ba52-8985-439b-b26c-995f003794ff.jpg
+2017-06-26 18:59:48,612 - __main__ - INFO - Check image path: data/aug_images/dff1a04b-4d76-4cd1-8bee-692390c7e79e.jpg
+2017-06-26 19:03:54,285 - __main__ - INFO - Check image path: data/aug_images/429ed84a-47e6-44c7-9e67-35e50f357531.jpg
+2017-06-26 19:10:11,353 - __main__ - INFO - Check image path: data/aug_images/a99c0685-b66c-4f4e-a369-f19452e5a565.jpg
+2017-06-26 20:05:37,027 - __main__ - INFO - BEFORE GET_FRAMES: 
+2017-06-26 20:05:37,027 - __main__ - INFO - 2017-06-26 20:05:37.027485
+2017-06-26 20:05:37,027 - __main__ - ERROR - Invalid video file
+2017-06-26 20:05:37,027 - __main__ - INFO - AFTER GET_FRAMES: 
+2017-06-26 20:05:37,027 - __main__ - INFO - 2017-06-26 20:05:37.027871
+2017-06-26 20:47:14,103 - __main__ - INFO - BEFORE GET_FRAMES: 
+2017-06-26 20:47:14,103 - __main__ - INFO - 2017-06-26 20:47:14.103424
+2017-06-26 20:47:15,725 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 10
+2017-06-26 20:47:15,929 - __main__ - INFO - File Path: data/good_photos/sky/0000_747b963f-af9f-4bef-8766-596ce864f0a3.jpg
+2017-06-26 20:47:16,323 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 10
+2017-06-26 20:47:16,367 - __main__ - INFO - File Path: data/good_photos/sky/0001_4cef2278-981e-44e7-b0b0-ade786bb6038.jpg
+2017-06-26 20:47:16,717 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 10
+2017-06-26 20:47:16,770 - __main__ - INFO - File Path: data/good_photos/sky/0002_849a7715-c3d2-4024-9067-b04d632d64e1.jpg
+2017-06-26 20:47:17,111 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 10
+2017-06-26 20:47:17,187 - __main__ - INFO - File Path: data/good_photos/sky/0003_ec588f6f-77b7-4f15-b74e-188634c3a292.jpg
+2017-06-26 20:47:17,521 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 10
+2017-06-26 20:47:17,588 - __main__ - INFO - File Path: data/good_photos/sky/0004_9770b42e-04a5-4623-a22a-91ddc0ab7d8b.jpg
+2017-06-26 20:47:17,924 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 10
+2017-06-26 20:47:17,982 - __main__ - INFO - File Path: data/good_photos/sky/0005_5376642a-deb8-4111-bd9e-306acac2593d.jpg
+2017-06-26 20:47:18,326 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 10
+2017-06-26 20:47:18,376 - __main__ - INFO - File Path: data/good_photos/sky/0006_3a5e4830-a84e-418e-99df-2b476c82ea7f.jpg
+2017-06-26 20:47:18,731 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 10
+2017-06-26 20:47:18,793 - __main__ - INFO - File Path: data/good_photos/sky/0007_d5d1d6f1-ae41-487e-b689-f16ddf76494b.jpg
+2017-06-26 20:47:19,129 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 10
+2017-06-26 20:47:19,443 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 10
+2017-06-26 20:47:19,484 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,501 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,501 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,501 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,501 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,502 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,502 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,502 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,502 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,502 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,502 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,502 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,503 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,503 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,503 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,503 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,503 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,503 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,504 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,504 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,504 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,504 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,504 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,504 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,505 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,505 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,505 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,505 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,505 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,505 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,506 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,506 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,506 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,506 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,506 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,506 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,507 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,507 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,507 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,507 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,507 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,507 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,508 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,508 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,508 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,508 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,508 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,508 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,509 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,509 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,509 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,509 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,509 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,509 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,510 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,510 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,510 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,510 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,510 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,510 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,511 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,511 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,511 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,511 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,511 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,511 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,511 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,512 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,512 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,512 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,512 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,512 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,512 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,513 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,513 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,513 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,513 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,513 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,513 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,514 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,514 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,514 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,514 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,514 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,514 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,515 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,515 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,515 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,515 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,515 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,515 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,515 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,516 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,516 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,516 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,516 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,516 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,516 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,517 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,517 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:47:19,762 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 1
+2017-06-26 20:47:20,069 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 10
+2017-06-26 20:47:20,117 - __main__ - INFO - File Path: data/good_photos/sky/0008_4c66dbc6-fecf-4305-bd3d-10e1cbfb6ead.jpg
+2017-06-26 20:47:20,454 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 10
+2017-06-26 20:47:20,514 - __main__ - INFO - File Path: data/good_photos/sky/0009_b5a15fbe-967e-4a0f-ab46-c1f4ee44ffa0.jpg
+2017-06-26 20:47:20,876 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 10
+2017-06-26 20:48:28,936 - __main__ - INFO - BEFORE GET_FRAMES: 
+2017-06-26 20:48:28,937 - __main__ - INFO - 2017-06-26 20:48:28.937130
+2017-06-26 20:48:39,454 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:48:39,692 - __main__ - INFO - File Path: data/good_photos/sky/0000_5e772f17-84a5-4991-9dfc-782a423d264d.jpg
+2017-06-26 20:48:48,860 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:48:48,954 - __main__ - INFO - File Path: data/good_photos/sky/0001_30464fbf-a0e2-48e6-924c-65dc13d4198b.jpg
+2017-06-26 20:48:58,257 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:48:58,334 - __main__ - INFO - File Path: data/good_photos/sky/0002_07e88b68-65a0-4418-9f58-e48a9a032aaa.jpg
+2017-06-26 20:49:07,642 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:49:07,725 - __main__ - INFO - File Path: data/good_photos/sky/0003_47fa9ca1-7435-49c4-acb6-1b247f80908a.jpg
+2017-06-26 20:49:17,150 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:49:17,225 - __main__ - INFO - File Path: data/good_photos/sky/0004_86c70a83-ba01-40e8-8015-7ca72896443b.jpg
+2017-06-26 20:49:26,626 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:49:26,704 - __main__ - INFO - File Path: data/good_photos/sky/0005_f411b058-e376-445e-9611-5eb0ad7915f9.jpg
+2017-06-26 20:49:32,377 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 179
+2017-06-26 20:49:32,442 - __main__ - INFO - File Path: data/good_photos/sky/0006_2e2855b7-e448-4d87-8061-a250db964193.jpg
+2017-06-26 20:49:32,625 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 4
+2017-06-26 20:49:32,898 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 8
+2017-06-26 20:49:35,103 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 71
+2017-06-26 20:49:40,848 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 186
+2017-06-26 20:49:40,921 - __main__ - INFO - File Path: data/good_photos/sky/0007_6e7c9dc8-c300-4932-89a5-eaef5be2176f.jpg
+2017-06-26 20:49:41,592 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 20
+2017-06-26 20:49:41,626 - __main__ - INFO - File Path: data/good_photos/sky/0008_deb9ffdf-3b2d-4763-b148-769cf5802e39.jpg
+2017-06-26 20:49:42,030 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 11
+2017-06-26 20:49:42,064 - __main__ - INFO - File Path: data/good_photos/sky/0009_09a90099-3aae-454c-ab5f-65838efd6f22.jpg
+2017-06-26 20:49:42,460 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 11
+2017-06-26 20:49:42,495 - __main__ - INFO - File Path: data/good_photos/sky/0010_9b79b5f4-1010-4fd5-90d2-f907fb18f0b1.jpg
+2017-06-26 20:49:51,826 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:49:51,899 - __main__ - INFO - File Path: data/good_photos/sky/0011_87e59b29-c118-4d0b-9019-4e09af0648d6.jpg
+2017-06-26 20:50:01,325 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:50:01,407 - __main__ - INFO - File Path: data/good_photos/sky/0012_ba9028fa-0461-454b-910f-7c53677d5410.jpg
+2017-06-26 20:50:10,914 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:50:11,004 - __main__ - INFO - File Path: data/good_photos/sky/0013_8b4994c6-121e-44a1-a429-7656ae599883.jpg
+2017-06-26 20:50:14,007 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 94
+2017-06-26 20:50:14,082 - __main__ - INFO - File Path: data/good_photos/sky/0014_bc60b60b-83db-4608-81e6-7a32b56a4cac.jpg
+2017-06-26 20:50:23,494 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:50:23,578 - __main__ - INFO - File Path: data/good_photos/sky/0015_753b1657-e49c-4856-b286-9d9fcb98ed6f.jpg
+2017-06-26 20:50:32,993 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:50:33,088 - __main__ - INFO - File Path: data/good_photos/sky/0016_62604605-5376-44e5-a0a8-f565c71e3a57.jpg
+2017-06-26 20:50:42,517 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:50:42,603 - __main__ - INFO - File Path: data/good_photos/sky/0017_5c64185b-c3df-4776-b53a-3c9815e81de8.jpg
+2017-06-26 20:50:52,083 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:50:52,184 - __main__ - INFO - File Path: data/good_photos/sky/0018_f2fa8a6b-ecbd-447e-bc18-d38fa655dff7.jpg
+2017-06-26 20:51:01,775 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:51:01,861 - __main__ - INFO - File Path: data/good_photos/sky/0019_9fa70f92-07c0-425d-b727-a1a32cde760f.jpg
+2017-06-26 20:51:11,409 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:51:11,497 - __main__ - INFO - File Path: data/good_photos/sky/0020_78470b4a-388d-4817-84e2-c9a979b61910.jpg
+2017-06-26 20:51:20,958 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:51:21,042 - __main__ - INFO - File Path: data/good_photos/sky/0021_39bc55f3-f16c-4be4-b4b5-1e204225e611.jpg
+2017-06-26 20:51:30,527 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:51:30,625 - __main__ - INFO - File Path: data/good_photos/sky/0022_c99e37ff-da67-4fd7-b4fd-86d6ab1fde8f.jpg
+2017-06-26 20:51:40,179 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:51:40,261 - __main__ - INFO - File Path: data/good_photos/sky/0023_54fcd21c-6d1c-41a3-afcd-9a352b4e519f.jpg
+2017-06-26 20:51:49,716 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:51:49,802 - __main__ - INFO - File Path: data/good_photos/sky/0024_73e4215b-57fd-4afb-99ca-32e27846e1f3.jpg
+2017-06-26 20:51:54,869 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:51:54,869 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:51:54,870 - __main__ - INFO - Good Frames Count: 25
+2017-06-26 20:51:54,871 - __main__ - INFO - AFTER GET_FRAMES: 
+2017-06-26 20:51:54,871 - __main__ - INFO - 2017-06-26 20:51:54.871571
+2017-06-26 20:55:31,153 - __main__ - INFO - BEFORE GET_FRAMES: 
+2017-06-26 20:55:31,153 - __main__ - INFO - 2017-06-26 20:55:31.153762
+2017-06-26 20:55:41,643 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:55:41,883 - __main__ - INFO - File Path: data/good_photos/sky/0000_4e58204f-c9f7-4613-a722-2a6d09ec582c.jpg
+2017-06-26 20:55:51,131 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:55:51,212 - __main__ - INFO - File Path: data/good_photos/sky/0001_f16ce0dc-af43-4f27-af4f-384e1bf941b6.jpg
+2017-06-26 20:56:00,436 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:56:00,511 - __main__ - INFO - File Path: data/good_photos/sky/0002_487efc73-68c1-4ea1-adea-253c2b2ba3f7.jpg
+2017-06-26 20:56:09,776 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:56:09,849 - __main__ - INFO - File Path: data/good_photos/sky/0003_991248d6-c25b-444e-8a6b-c5385ee05d17.jpg
+2017-06-26 20:56:19,110 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:56:19,184 - __main__ - INFO - File Path: data/good_photos/sky/0004_f58f70b1-00f5-471f-b618-6cc2b9698917.jpg
+2017-06-26 20:56:28,510 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:56:28,607 - __main__ - INFO - File Path: data/good_photos/sky/0005_091508c2-f9eb-4113-b41f-0de065678b6e.jpg
+2017-06-26 20:56:34,231 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 179
+2017-06-26 20:56:34,305 - __main__ - INFO - File Path: data/good_photos/sky/0006_3508affb-cdf3-4ea5-8d6a-0fa4bf026742.jpg
+2017-06-26 20:56:34,483 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 4
+2017-06-26 20:56:34,516 - __main__ - INFO - File Path: data/good_photos/sky/0007_7c4e909f-431d-477a-96bd-0df186dced7e.jpg
+2017-06-26 20:56:34,822 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 8
+2017-06-26 20:56:34,872 - __main__ - INFO - File Path: data/good_photos/sky/0008_f7fb27df-cd6a-4a3c-8cb8-9195f91f2f2d.jpg
+2017-06-26 20:56:37,107 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 71
+2017-06-26 20:56:37,170 - __main__ - INFO - File Path: data/good_photos/sky/0009_1a4f0f7f-a94f-4424-b98e-8bab7ba2cd80.jpg
+2017-06-26 20:56:42,957 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 186
+2017-06-26 20:56:43,049 - __main__ - INFO - File Path: data/good_photos/sky/0010_e3e0dc2d-2f4a-4cf1-b90a-a3e13e2c1733.jpg
+2017-06-26 20:56:43,719 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 20
+2017-06-26 20:56:43,772 - __main__ - INFO - File Path: data/good_photos/sky/0011_1ba05b5f-1e4e-4e7c-8cb2-498073d49a03.jpg
+2017-06-26 20:56:44,163 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 11
+2017-06-26 20:56:44,207 - __main__ - INFO - File Path: data/good_photos/sky/0012_8e13be62-be2f-4738-a95c-faf4b9aa7651.jpg
+2017-06-26 20:56:44,604 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 11
+2017-06-26 20:56:44,666 - __main__ - INFO - File Path: data/good_photos/sky/0013_7f5de76f-dc07-4223-83ef-1327031d3f69.jpg
+2017-06-26 20:56:54,022 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:56:54,101 - __main__ - INFO - File Path: data/good_photos/sky/0014_d0a21656-29db-43bb-b1aa-1387d0288b09.jpg
+2017-06-26 20:57:03,601 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:57:03,688 - __main__ - INFO - File Path: data/good_photos/sky/0015_9925aa5a-a573-46e0-b421-1d9e30888ec9.jpg
+2017-06-26 20:57:13,215 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:57:13,322 - __main__ - INFO - File Path: data/good_photos/sky/0016_2908f36f-91c5-4b62-80f7-bdc34ecd62b9.jpg
+2017-06-26 20:57:16,335 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 94
+2017-06-26 20:57:16,394 - __main__ - INFO - File Path: data/good_photos/sky/0017_0567491f-ffa3-4a8a-b041-7357dbb5e721.jpg
+2017-06-26 20:57:25,947 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:57:26,033 - __main__ - INFO - File Path: data/good_photos/sky/0018_4b5f5b06-a3dd-40fc-a57f-e64531e1f402.jpg
+2017-06-26 20:57:35,652 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:57:35,732 - __main__ - INFO - File Path: data/good_photos/sky/0019_4f5a4a30-07ee-4303-ad10-51287a9e19dd.jpg
+2017-06-26 20:57:45,251 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:57:45,358 - __main__ - INFO - File Path: data/good_photos/sky/0020_460fe9bb-f183-4c24-9e9c-e38a8a4ea3c5.jpg
+2017-06-26 20:57:54,903 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:57:55,003 - __main__ - INFO - File Path: data/good_photos/sky/0021_e9a0284e-9692-45ec-8590-cba2082463dd.jpg
+2017-06-26 20:58:04,539 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:58:04,625 - __main__ - INFO - File Path: data/good_photos/sky/0022_729bd1fd-bf8b-4c05-afd6-7f1f5bd5b667.jpg
+2017-06-26 20:58:14,031 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:58:14,115 - __main__ - INFO - File Path: data/good_photos/sky/0023_2e54f64b-ef54-48a1-ad5a-e5d4139727d8.jpg
+2017-06-26 20:58:23,545 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:58:23,629 - __main__ - INFO - File Path: data/good_photos/sky/0024_f6e23ac9-4aaa-4395-8024-d952c9701eeb.jpg
+2017-06-26 20:58:33,004 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:58:33,093 - __main__ - INFO - File Path: data/good_photos/sky/0025_f3be61ac-30f6-4131-a362-fc90ea46d7d0.jpg
+2017-06-26 20:58:42,504 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:58:42,614 - __main__ - INFO - File Path: data/good_photos/sky/0026_fefca0da-ae7e-41db-b55c-679591098003.jpg
+2017-06-26 20:58:52,165 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 20:58:52,251 - __main__ - INFO - File Path: data/good_photos/sky/0027_7c54ce06-a96a-447b-92dd-4320f3e3cd6b.jpg
+2017-06-26 20:58:57,230 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:58:57,230 - __main__ - WARNING - Frame could not be read.
+2017-06-26 20:58:57,230 - __main__ - INFO - Good Frames Count: 28
+2017-06-26 20:58:57,231 - __main__ - INFO - AFTER GET_FRAMES: 
+2017-06-26 20:58:57,231 - __main__ - INFO - 2017-06-26 20:58:57.231793
