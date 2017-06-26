@@ -10,13 +10,7 @@ import tensorflow as tf
 from keras import backend as K
 K.set_image_dim_ordering('tf')
 
-def mse(image_1, image_2):
-    err = np.sum((image_1.astype("float") - image_2.astype("float")) ** 2)
-    err /= float(image_1.shape[0] * image_1.shape[1])
-    
-    return err
-
-def get_frames(file_path, model, consecutive, err_threshold):
+def get_frames(file_path, top_layer, bottom_layers, path, threshold):
     '''
     DESCRIPTION:
         - Given a video file, this function predicts frame-by-frame if the picture is "good" or "bad".
@@ -27,77 +21,60 @@ def get_frames(file_path, model, consecutive, err_threshold):
     OUTPUT:
         - prints if the frame is good or bad.
     '''
-    file_path = file_path.encode('utf-8')
-    print("FILE_PATH: ", file_path)
-
-    vid = skvideo.io.VideoCapture(file_path)
-   #  vid = cv2.VideoCapture(file_path)
-    pred_arr = []
+    try:
+        vid = imageio.get_reader(file_path)
+    except:
+        print("Invalid video file")
+        return None
+    
+    feature_vec_list = []
     orig_frames = []
     good_frames = []
+    curr_feat_vec = []
     
     good_count = 0
-    good_frames_count = 1000
-    
-    destination_list = []
-    try:
-        while True:
-            ret, frame = vid.read()
-            if not ret:
-                vid.release()
-                print("Released Video Resource")
-                break
+    good_frames_count = 0
 
-            resized = cv2.resize(frame, (224, 224)).astype(np.float32)
-            if not pred_arr:
-                pred_arr.append(resized)
-                orig_frames.append(frame)
-            
-            for image in pred_arr:
-                err = mse(image, resized)
-                if err > err_threshold:
-                    pred_arr.append(resized)
-                    orig_frames.append(frame)
-                    break
-                
-            if len(pred_arr) >= consecutive:
-                pred_arr = np.array(pred_arr)
-                pred = model.predict(pred_arr)
-                for p in pred:
-                    if p > 0.5:
-                        good_count += 1
-                    else: 
-                        good_count = 0
-                        break
+    for i in range(vid.get_length()):
+        try:
+            frame = vid.get_data(i)
+        except:
+            print("Frame could not be read.")
+            continue
 
-                if good_count == consecutive:
-                    print("PRED_ARR SHAPE: ", orig_frames[consecutive // 2].shape)
-                    tar = os.path.join(APP_ROOT, 'static/images/')
-                    if not os.path.isdir(tar):
-                        os.mkdir(tar)
+        resized = np.array([cv2.resize(frame, (224, 224)).astype(np.float32)])
+        feat_vec = bottom_layers.predict(resized)
+        if curr_feat_vec == []:
+            curr_feat_vec = feat_vec
 
-                    dest = tar + str(good_frames_count) + '.jpg'
-                    destination_list.append(dest)
-                    print("File Path: ", dest)
+        if cosine_similarity(curr_feat_vec, feat_vec) > threshold or len(feature_vec_list) == 0:
+            feature_vec_list.append(feat_vec)
+            orig_frames.append(frame)
+            curr_feat_vec = feat_vec
+        else:
+            print("LENGTH OF CURRENT SCENE: {}".format(len(feature_vec_list)))
+            pred = top_layer.predict(np.array(feature_vec_list))
+            if not os.path.isdir(path):
+                os.mkdir(path)
 
-                    cv2.imwrite(dest, orig_frames[consecutive // 2])
-                    
-                    good_frames.append(orig_frames[consecutive // 2])
-                    good_frames_count += 1
+            file_path = os.path.join(path, str(good_frames_count) + str(uuid.uuid4()) + '.jpg')
+            cv2.imwrite(file_path, orig_frames[np.argmax(pred)])
+            good_frames.append(orig_frames[np.argmax(pred)])
+            good_frames_count += 1
+            print("File Path: {}".format(file_path))
 
-                pred_arr = []
-                orig_frames = []
-                
-        return good_frames, destination_list
+            feature_vec_list = []
+            orig_frames = []
 
-    except KeyboardInterrupt:
-        vid.release()
-        print("Released Video Resource")
+    print("Good Frames Count: {}".format(good_frames_count))
+
+    return good_frames
+
 
 __author__ = 'paul'
 
 app = Flask(__name__)
-model = keras.models.load_model('final_model.h5')
+model = keras.models.load_model('model.h5')
 print('MODEL LOADED')
 graph = tf.get_default_graph()
 
@@ -130,12 +107,11 @@ def upload():
             print("BEFORE GET_FRAMES: ")
             print(datetime.datetime.now())
             with graph.as_default():
-                good_frames, list_of_destinations  = get_frames(destination, model=model, consecutive=5, err_threshold=500)
+                bot, top = split_model(model=model)
+                good_frames = get_frames(destination,top_layer=top, bottom_layers=bot, path='static/images/') 
                 print("AFTER GET_FRAMES: ")
                 print(datetime.datetime.now())
-                for image in list_of_destinations:
-                    temp_image = re.search('[0-9]*.jpg', image)
-                    image_list.append(temp_image.group(0))
+                image_list = ['static/images/' + f for f in listdir('static/images/') if isfile(join('static/images/', f))]
 
     return render_template('upload.html', msg=msg, image_list=image_list)
 
