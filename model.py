@@ -30,7 +30,7 @@ from IPython.display import clear_output
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-logger.info("BACKEND: ", keras.backend.backend())
+logger.info("BACKEND: {}".format(str(keras.backend.backend())))
 
 #### HELPER FUNCTIONS ####
 def use_instagram_scraper(list_of_directories):
@@ -162,7 +162,7 @@ def augment(image_path, new_path, repeat=5):
         
         if not os.path.isdir(new_path):
             os.makedirs(new_path)
-            logging.Logger.info("Created {} directory".format(new_path))
+            logger.info("Created {} directory".format(new_path))
             
         cropped_img_path = os.path.join(new_path, str(uuid.uuid4()) + '.jpg')
         cropped_img = cv2.imwrite(cropped_img_path, cropped_arr)
@@ -224,7 +224,7 @@ def move_files(file_paths, perc_list, dir_list):
         - If augment is False, then only one list of file paths are given.
     '''
     if len(perc_list) > len(dir_list):
-        logger.warning("Warning: more percentages ({}) than available directories ({})".format(len(perc_list, len(dir_list))))
+        logger.warning("Warning: more percentages ({}) than available directories ({})".format(str(len(perc_list), str(len(dir_list)))))
     
     if len(perc_list) < len(dir_list):
         logger.error("Error: Too few percentages.")
@@ -418,7 +418,7 @@ def get_frames(file_path, top_layer, bottom_layers, path, sim_threshold, good_th
             orig_frames.append(frame)
             curr_feat_vec = feat_vec
             if len(feature_vec_list) == consecutive:
-                logger.info("LENGTH OF CURRENT SCENE (CONSECUTIVE): {}".format(len(feature_vec_list)))
+                logger.info("LENGTH OF CURRENT SCENE (CONSECUTIVE): {}".format(str(len(feature_vec_list))))
                 pred = top_layer.predict(np.array(feature_vec_list))
                 if pred[np.argmax(pred)] < good_threshold:
                     feature_vec_list = []
@@ -440,7 +440,7 @@ def get_frames(file_path, top_layer, bottom_layers, path, sim_threshold, good_th
                 feature_vec_list = []
                 orig_frames = []
         else:
-            logger.info("LENGTH OF CURRENT SCENE (CHANGE): {}".format(len(feature_vec_list)))
+            logger.info("LENGTH OF CURRENT SCENE (CHANGE): {}".format(str(len(feature_vec_list))))
             pred = top_layer.predict(np.array(feature_vec_list))
             if pred[np.argmax(pred)] < good_threshold:
                 feature_vec_list = []
@@ -464,7 +464,7 @@ def get_frames(file_path, top_layer, bottom_layers, path, sim_threshold, good_th
             feature_vec_list = []
             orig_frames = []
 
-    logger.info("Good Frames Count: {}".format(good_frames_count))
+    logger.info("Good Frames Count: {}".format(str(good_frames_count)))
 
     return good_frames
 
@@ -536,7 +536,7 @@ def main(scrape=False, move=False):
 	bot, top = split_model(model=keras.models.load_model('data/model.h5'))
 
 	logger.info("BEFORE GET_FRAMES: ")
-	logger.info(datetime.datetime.now())
+	logger.info(str(datetime.datetime.now()))
 
 	snap = get_frames(VID_PATH, \
 						top_layer=top, \
@@ -547,7 +547,7 @@ def main(scrape=False, move=False):
 						consecutive=CONSECUTIVE)
 
 	logger.info("AFTER GET_FRAMES: ")
-	logger.info(datetime.datetime.now())
+	logger.info(str(datetime.datetime.now()))
 
 	return snap, model
 
