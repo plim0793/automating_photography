@@ -508,7 +508,7 @@ SIM_THRESHOLD = 0.50
 GOOD_THRESHOLD = 0.95
 CONSECUTIVE = 10
 
-def main(scrape=False, move=False):
+def main(scrape=True, move=True):
 	if scrape:
 		list_of_usernames_directories = use_instagram_scraper(LIST_OF_USERNAME_DIRECTORIES)
 
