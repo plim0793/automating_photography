@@ -1,0 +1,235 @@
+2017-06-26 21:31:16,442 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 10
+2017-06-26 21:31:16,537 - __main__ - INFO - File Path: static/images/0000_5595c15c-6731-4baf-85ca-e5e8313981b3.jpg
+2017-06-26 21:31:19,387 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 10
+2017-06-26 21:31:19,433 - __main__ - INFO - File Path: static/images/0001_6c482ba7-92dc-48c6-9741-943d2e62a11a.jpg
+2017-06-26 21:31:22,315 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 10
+2017-06-26 21:31:22,364 - __main__ - INFO - File Path: static/images/0002_7349c5a6-936f-4b6e-9afb-d69dcf398920.jpg
+2017-06-26 21:34:28,869 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 21:34:28,981 - __main__ - INFO - File Path: static/images/0000_494688b2-6878-4325-a4a2-ac84139d8c5b.jpg
+2017-06-26 21:35:55,937 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 21:35:56,008 - __main__ - INFO - File Path: static/images/0001_43523e34-db31-442e-ac0f-d9515ebccda6.jpg
+2017-06-26 21:37:22,828 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 21:37:22,916 - __main__ - INFO - File Path: static/images/0002_39e2e8ce-5a62-4b45-bfde-a516997b4a95.jpg
+2017-06-26 21:38:49,791 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 21:38:49,869 - __main__ - INFO - File Path: static/images/0003_c196c8f0-dd06-4873-9e0c-bfe31a5efe26.jpg
+2017-06-26 21:40:16,632 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 21:40:16,715 - __main__ - INFO - File Path: static/images/0004_1fd16c8f-fd21-43e3-a2ea-3fc4ad622e06.jpg
+2017-06-26 21:41:43,757 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 21:41:43,837 - __main__ - INFO - File Path: static/images/0005_eb307134-f08f-4ab2-a758-b1ffd15c0b89.jpg
+2017-06-26 21:42:35,910 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 179
+2017-06-26 21:42:35,975 - __main__ - INFO - File Path: static/images/0006_4daa982e-29a3-489d-9245-b74806eda418.jpg
+2017-06-26 21:42:37,398 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 4
+2017-06-26 21:42:37,432 - __main__ - INFO - File Path: static/images/0007_7c56f404-e098-4401-8e88-4afaa596e269.jpg
+2017-06-26 21:42:40,016 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 8
+2017-06-26 21:42:40,046 - __main__ - INFO - File Path: static/images/0008_0bf5eaf2-ce4b-440c-9b5a-15e8f8f0db78.jpg
+2017-06-26 21:43:00,888 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 71
+2017-06-26 21:43:00,941 - __main__ - INFO - File Path: static/images/0009_1268f4c8-5d74-4fd6-9324-9fb3fc3b9d93.jpg
+2017-06-26 21:43:55,021 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 186
+2017-06-26 21:43:55,072 - __main__ - INFO - File Path: static/images/0010_8fcb0e4e-b8ac-43ac-9246-a6bc0f49958c.jpg
+2017-06-26 21:44:01,118 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 20
+2017-06-26 21:44:04,600 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 11
+2017-06-26 21:44:08,079 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 11
+2017-06-26 21:45:34,901 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 21:45:34,971 - __main__ - INFO - File Path: static/images/0011_078a4a9f-7f0f-4781-b794-769edc93f2a7.jpg
+2017-06-26 21:47:02,020 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 21:47:02,089 - __main__ - INFO - File Path: static/images/0012_6e28eec6-5a20-48f3-8bdb-3eba438a33b3.jpg
+2017-06-26 21:48:29,042 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 21:48:56,616 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 94
+2017-06-26 21:50:23,632 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 21:50:23,711 - __main__ - INFO - File Path: static/images/0013_0083eeb8-4451-4edc-81db-d05427568d8f.jpg
+2017-06-26 21:51:50,608 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 21:51:50,683 - __main__ - INFO - File Path: static/images/0014_29b0000a-c4e5-4254-bfd2-7b83c7708e4a.jpg
+2017-06-26 21:53:17,465 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 21:53:17,545 - __main__ - INFO - File Path: static/images/0015_192081e6-85e6-466b-bcc2-f039d632b3bc.jpg
+2017-06-26 21:54:44,291 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 21:54:44,380 - __main__ - INFO - File Path: static/images/0016_e553f8d0-09ea-41c6-8056-eff8480b6cbb.jpg
+2017-06-26 21:56:11,044 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 21:56:11,122 - __main__ - INFO - File Path: static/images/0017_34ee1b12-3465-4412-afe2-7f781daa9cbf.jpg
+2017-06-26 21:57:38,112 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 21:57:38,190 - __main__ - INFO - File Path: static/images/0018_6d78f182-5e88-487e-96b6-e877443bf316.jpg
+2017-06-26 21:59:05,055 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 21:59:05,138 - __main__ - INFO - File Path: static/images/0019_38fe1d41-6605-4306-b5ca-5de431d962c9.jpg
+2017-06-26 22:00:32,012 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:01:58,887 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:01:58,970 - __main__ - INFO - File Path: static/images/0020_d9425dac-a12a-411b-9cd3-95f648bfe7d6.jpg
+2017-06-26 22:03:25,780 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:03:25,852 - __main__ - INFO - File Path: static/images/0021_424fe32e-a756-45bb-8ce5-8d449abd24fc.jpg
+2017-06-26 22:04:12,185 - __main__ - WARNING - Frame could not be read.
+2017-06-26 22:04:12,186 - __main__ - WARNING - Frame could not be read.
+2017-06-26 22:04:12,186 - __main__ - INFO - Good Frames Count: 22
+2017-06-26 22:12:41,060 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:12:41,184 - __main__ - INFO - File Path: static/images/0000_56ca6cac-e1f6-4957-ad68-d938801c9e3b.jpg
+2017-06-26 22:14:07,346 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:14:07,424 - __main__ - INFO - File Path: static/images/0001_8179728c-6751-486f-affd-685abe660413.jpg
+2017-06-26 22:15:33,423 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:15:33,501 - __main__ - INFO - File Path: static/images/0002_a9df6d52-e20d-4643-a012-2360afa45a2c.jpg
+2017-06-26 22:16:59,591 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:16:59,658 - __main__ - INFO - File Path: static/images/0003_8f550d73-869d-4462-80b0-c5c0c13dfd0d.jpg
+2017-06-26 22:18:25,788 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:18:25,865 - __main__ - INFO - File Path: static/images/0004_d61a34cb-f40e-4a82-bf49-413d747162ed.jpg
+2017-06-26 22:19:52,059 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:19:52,135 - __main__ - INFO - File Path: static/images/0005_0dd60041-f94d-4516-ac18-eecd874c9874.jpg
+2017-06-26 22:20:43,782 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 179
+2017-06-26 22:20:43,853 - __main__ - INFO - File Path: static/images/0006_45fdcf97-2533-4d2a-a1e1-663c2fdbfafd.jpg
+2017-06-26 22:20:45,262 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 4
+2017-06-26 22:20:45,290 - __main__ - INFO - File Path: static/images/0007_6a505be0-635b-4c42-afb5-4e8cd1c8c84b.jpg
+2017-06-26 22:20:47,847 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 8
+2017-06-26 22:20:47,878 - __main__ - INFO - File Path: static/images/0008_6cdaa688-2abf-4847-9b19-63bc60b03f38.jpg
+2017-06-26 22:21:08,493 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 71
+2017-06-26 22:21:08,542 - __main__ - INFO - File Path: static/images/0009_5f5d388c-200d-4f73-a61e-30d71027dfe8.jpg
+2017-06-26 22:22:02,058 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 186
+2017-06-26 22:22:02,115 - __main__ - INFO - File Path: static/images/0010_cdc70a82-34b4-4dff-850f-b8495a5cb795.jpg
+2017-06-26 22:22:08,124 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 20
+2017-06-26 22:22:11,552 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 11
+2017-06-26 22:22:14,991 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 11
+2017-06-26 22:23:41,030 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:23:41,105 - __main__ - INFO - File Path: static/images/0011_1ec35151-5c7f-4d76-ba26-70be8fa1f939.jpg
+2017-06-26 22:25:07,016 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:25:07,094 - __main__ - INFO - File Path: static/images/0012_90449b75-a8e7-47af-8b30-442e35c7fda8.jpg
+2017-06-26 22:26:32,893 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:26:32,972 - __main__ - INFO - File Path: static/images/0013_490747c4-567f-4cf7-91af-aff37330d5a2.jpg
+2017-06-26 22:27:00,118 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 94
+2017-06-26 22:28:26,099 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:28:26,173 - __main__ - INFO - File Path: static/images/0014_f97dbd71-baf4-4525-aa3b-7e7c38b47124.jpg
+2017-06-26 22:29:52,250 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:29:52,333 - __main__ - INFO - File Path: static/images/0015_4f38ce2d-13ff-41e1-b859-b4a89926a639.jpg
+2017-06-26 22:31:18,250 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:31:18,327 - __main__ - INFO - File Path: static/images/0016_6d4c0470-1e11-41a6-947c-4fed1a8ee8a8.jpg
+2017-06-26 22:32:44,282 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:32:44,368 - __main__ - INFO - File Path: static/images/0017_2198979b-4a4d-4b5e-8007-a692dfc1a1a3.jpg
+2017-06-26 22:34:10,363 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:34:10,440 - __main__ - INFO - File Path: static/images/0018_0e2bd9d9-a4bd-4bfd-b5ad-89469e11a2ce.jpg
+2017-06-26 22:35:36,587 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:35:36,679 - __main__ - INFO - File Path: static/images/0019_105281fc-c0fe-4171-a5e7-96a49d16e4d8.jpg
+2017-06-26 22:37:02,581 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:37:02,649 - __main__ - INFO - File Path: static/images/0020_e47a9aac-9d8c-484a-a643-3d5b1951e352.jpg
+2017-06-26 22:38:28,597 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:38:28,689 - __main__ - INFO - File Path: static/images/0021_48660f12-7227-46d9-83f1-64e9fc885270.jpg
+2017-06-26 22:39:54,719 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:39:54,801 - __main__ - INFO - File Path: static/images/0022_f3185ac5-bb66-497a-963f-e45ae2345e77.jpg
+2017-06-26 22:41:20,919 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:41:20,996 - __main__ - INFO - File Path: static/images/0023_77489805-d12b-4ea3-a419-7df463fca9c5.jpg
+2017-06-26 22:42:06,876 - __main__ - WARNING - Frame could not be read.
+2017-06-26 22:42:06,877 - __main__ - WARNING - Frame could not be read.
+2017-06-26 22:42:06,877 - __main__ - INFO - Good Frames Count: 24
+2017-06-26 22:45:34,089 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:45:34,200 - __main__ - INFO - File Path: static/images/0000_a0123ec9-dd2e-40dd-a20d-82c6cbb1186c.jpg
+2017-06-26 22:47:00,243 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:47:00,316 - __main__ - INFO - File Path: static/images/0001_0b27f3b6-b10f-4fca-82c4-1c29b61030cc.jpg
+2017-06-26 22:48:26,590 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:48:26,663 - __main__ - INFO - File Path: static/images/0002_fab56451-9192-4bc9-9cfa-27c1a4ce7942.jpg
+2017-06-26 22:49:52,659 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:51:18,887 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:51:18,969 - __main__ - INFO - File Path: static/images/0003_53e4e0c8-852e-4bdb-be65-327f2821d90c.jpg
+2017-06-26 22:52:44,870 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:52:44,946 - __main__ - INFO - File Path: static/images/0004_06c37951-18a4-4209-a627-bc361c39310e.jpg
+2017-06-26 22:53:36,571 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 179
+2017-06-26 22:53:36,632 - __main__ - INFO - File Path: static/images/0005_f60dbc3c-a904-4f4e-996f-b311c20dfe21.jpg
+2017-06-26 22:53:38,046 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 4
+2017-06-26 22:53:40,613 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 8
+2017-06-26 22:53:40,643 - __main__ - INFO - File Path: static/images/0006_b26e68ec-094b-4597-81d4-0422ced0164e.jpg
+2017-06-26 22:54:01,353 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 71
+2017-06-26 22:54:54,859 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 186
+2017-06-26 22:54:54,910 - __main__ - INFO - File Path: static/images/0007_a3a074b5-4f91-49fa-87c2-1ef7118a07b4.jpg
+2017-06-26 22:55:00,909 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 20
+2017-06-26 22:55:04,348 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 11
+2017-06-26 22:55:07,787 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 11
+2017-06-26 22:56:33,950 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:56:34,013 - __main__ - INFO - File Path: static/images/0008_9a88b1ec-46c3-473b-b75f-0c170153ee9b.jpg
+2017-06-26 22:58:00,069 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:58:00,145 - __main__ - INFO - File Path: static/images/0009_318d7f3c-a9f2-413c-9cf6-53a5c9ccd431.jpg
+2017-06-26 22:59:26,114 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 22:59:26,193 - __main__ - INFO - File Path: static/images/0010_5def1a7b-2a5b-460f-a41f-d825f5cf0798.jpg
+2017-06-26 22:59:53,532 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 94
+2017-06-26 22:59:53,596 - __main__ - INFO - File Path: static/images/0011_c6d85975-e7a0-4562-94ec-b5ffb4a48e29.jpg
+2017-06-26 23:01:19,674 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 23:01:19,746 - __main__ - INFO - File Path: static/images/0012_92f1f684-dde5-42be-b63c-59895cb451bd.jpg
+2017-06-26 23:02:45,805 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 23:02:45,884 - __main__ - INFO - File Path: static/images/0013_40ce6f35-700a-44cb-9864-c300f9c63a38.jpg
+2017-06-26 23:04:11,851 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 23:05:37,802 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 23:05:37,884 - __main__ - INFO - File Path: static/images/0014_2f34bcfe-71cf-4ff1-a0d3-15d6bc4bda73.jpg
+2017-06-26 23:07:03,887 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 23:07:03,958 - __main__ - INFO - File Path: static/images/0015_14b1ad77-1651-475d-8952-3f87bcc9fbf5.jpg
+2017-06-26 23:31:25,470 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-26 23:31:25,563 - __main__ - INFO - File Path: static/images/0000_11219f23-7c40-4a5e-8457-d2a3ca2f1e19.jpg
+2017-06-26 23:32:04,468 - __main__ - INFO - Good Frames Count: 1
+2017-06-27 00:12:13,237 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 00:12:13,316 - __main__ - INFO - File Path: static/images/0000_10ffb23e-625d-4909-a6d3-a741ead42e94.jpg
+2017-06-27 00:12:41,152 - __main__ - INFO - Good Frames Count: 1
+2017-06-27 00:28:03,740 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 00:28:03,838 - __main__ - INFO - File Path: static/images/0000_cfbfabbb-96e2-4a02-9aed-9f4c4e266da5.jpg
+2017-06-27 00:29:29,714 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 00:29:29,764 - __main__ - INFO - File Path: static/images/0001_542bb32d-ceb7-484c-8551-9dbb9f7cb8ed.jpg
+2017-06-27 00:30:55,877 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 00:30:55,938 - __main__ - INFO - File Path: static/images/0002_2946d5d6-d4fe-48bf-8b00-69d89d9486cc.jpg
+2017-06-27 00:32:22,041 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 00:32:22,097 - __main__ - INFO - File Path: static/images/0003_a4a1878f-a6a1-4b68-8508-954e5fe874e2.jpg
+2017-06-27 00:32:39,311 - __main__ - INFO - Good Frames Count: 4
+2017-06-27 00:41:45,305 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 00:41:45,399 - __main__ - INFO - File Path: static/images/0000_9dc5a75d-e352-40ce-94ab-2fa7a2a2a848.jpg
+2017-06-27 00:43:11,270 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 00:43:11,325 - __main__ - INFO - File Path: static/images/0001_9c30853d-dd21-44c4-a3ec-8ad19344eca0.jpg
+2017-06-27 00:44:37,489 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 00:44:37,544 - __main__ - INFO - File Path: static/images/0002_d14e626b-c6f5-4709-ad5b-6f59b2e75dfc.jpg
+2017-06-27 00:46:03,634 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 00:46:03,702 - __main__ - INFO - File Path: static/images/0003_44f1ff8f-712f-4a1e-9b47-1afa4f13e5bc.jpg
+2017-06-27 00:46:20,907 - __main__ - INFO - Good Frames Count: 4
+2017-06-27 00:54:09,891 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 00:54:10,004 - __main__ - INFO - File Path: static/images/0000_980f699e-578b-4104-849e-fde1472d8997.jpg
+2017-06-27 00:56:46,843 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 00:56:46,946 - __main__ - INFO - File Path: static/images/0000_2b79f164-d46b-42b9-9c06-8b0e7e8fdb8e.jpg
+2017-06-27 00:58:47,573 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 00:58:47,687 - __main__ - INFO - File Path: static/images/0000_1372f063-8fd4-4bcd-b234-29ef4a15004c.jpg
+2017-06-27 01:00:13,995 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 01:00:14,073 - __main__ - INFO - File Path: static/images/0001_39c1de1d-c58a-41d0-a706-288fd11e81e3.jpg
+2017-06-27 01:01:40,204 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 01:01:40,280 - __main__ - INFO - File Path: static/images/0002_eaa95c07-61c4-4a05-a4ed-ca54763405d2.jpg
+2017-06-27 01:03:06,465 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 01:03:06,549 - __main__ - INFO - File Path: static/images/0003_4794350f-b1dc-4a1f-91cb-906fb9487c83.jpg
+2017-06-27 01:04:32,806 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 01:04:32,882 - __main__ - INFO - File Path: static/images/0004_81c60f23-ea9f-4fc3-bc6b-d39ba512bb1e.jpg
+2017-06-27 01:05:59,082 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 01:05:59,153 - __main__ - INFO - File Path: static/images/0005_18d499d6-daf5-4049-b61b-203b74543e90.jpg
+2017-06-27 01:06:50,788 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 179
+2017-06-27 01:06:50,852 - __main__ - INFO - File Path: static/images/0006_025c0243-59f6-46dd-ac14-f064a81ee60f.jpg
+2017-06-27 01:06:52,266 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 4
+2017-06-27 01:06:54,843 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 8
+2017-06-27 01:07:15,534 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 71
+2017-06-27 01:08:09,229 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 186
+2017-06-27 01:08:09,279 - __main__ - INFO - File Path: static/images/0007_649d988f-1875-4072-aabb-0dc1c78cea5a.jpg
+2017-06-27 01:08:15,290 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 20
+2017-06-27 01:08:15,323 - __main__ - INFO - File Path: static/images/0008_194c7a33-1ed8-45f0-bf14-6fb56e27c951.jpg
+2017-06-27 01:08:18,742 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 11
+2017-06-27 01:08:18,771 - __main__ - INFO - File Path: static/images/0009_9c64e6dd-2880-4e8e-98a9-28db36d3aade.jpg
+2017-06-27 01:08:22,196 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 11
+2017-06-27 01:09:48,298 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 01:11:14,604 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 01:11:14,672 - __main__ - INFO - File Path: static/images/0010_cbd7dfe5-bb52-47d5-b51c-a83d262cf3e4.jpg
+2017-06-27 01:12:40,901 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 01:12:40,969 - __main__ - INFO - File Path: static/images/0011_745ff919-6700-461e-b18d-ff8467b53d15.jpg
+2017-06-27 01:13:08,198 - __main__ - INFO - LENGTH OF CURRENT SCENE (CHANGE): 94
+2017-06-27 01:13:08,251 - __main__ - INFO - File Path: static/images/0012_f1847a21-87bd-4fa8-97d9-dae0b40fafce.jpg
+2017-06-27 01:14:34,220 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 01:14:34,292 - __main__ - INFO - File Path: static/images/0013_c8634c05-2f31-4ea9-ad55-e1702b2034c1.jpg
+2017-06-27 01:16:00,452 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 01:16:00,529 - __main__ - INFO - File Path: static/images/0014_298ff01c-e7f0-4a0d-b3a1-2f4cbcae8999.jpg
+2017-06-27 01:17:26,544 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 01:17:26,618 - __main__ - INFO - File Path: static/images/0015_6c828f25-c171-42ac-b0d2-6b2db8c535d8.jpg
+2017-06-27 01:18:52,831 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 01:18:52,909 - __main__ - INFO - File Path: static/images/0016_f385acf6-6e59-48e9-a0aa-87fa94207fa1.jpg
+2017-06-27 01:20:19,046 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 01:20:19,122 - __main__ - INFO - File Path: static/images/0017_706d407e-b3ad-4a49-9454-28925889b7b9.jpg
+2017-06-27 01:21:45,242 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 01:21:45,323 - __main__ - INFO - File Path: static/images/0018_70141ecf-68c4-4a8d-b876-d1e3e6d71d99.jpg
+2017-06-27 01:23:11,400 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 01:23:11,473 - __main__ - INFO - File Path: static/images/0019_1abc6d8e-0a29-48dd-917a-afeed294c79b.jpg
+2017-06-27 01:24:37,483 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 01:24:37,569 - __main__ - INFO - File Path: static/images/0020_99007994-a5b1-436e-aeb1-476e0857d0f5.jpg
+2017-06-27 01:26:03,750 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 01:26:03,840 - __main__ - INFO - File Path: static/images/0021_7dcf180e-f323-43ce-8909-9c4c87e4f470.jpg
+2017-06-27 01:27:29,768 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 01:27:29,844 - __main__ - INFO - File Path: static/images/0022_19eebaef-f782-4a67-88b0-29ea812afbbd.jpg
+2017-06-27 01:28:15,777 - __main__ - WARNING - Frame could not be read.
+2017-06-27 01:28:15,777 - __main__ - WARNING - Frame could not be read.
+2017-06-27 01:28:15,777 - __main__ - INFO - Good Frames Count: 23

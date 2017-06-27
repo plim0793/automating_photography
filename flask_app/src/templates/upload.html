@@ -1,24 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Upload</title>
+<meta charset="UTF-8">
+<title>Upload</title>
+<style>
+.page-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida"; 
+}
+
+.header {
+	width: 100%;
+	text-align: center;
+	background-color: #237dde;
+	font-size: 28px;
+	margin-bottom: 15px;	
+}
+
+#msg {
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+.image-list {
+	display: flex;
+	flex-direction: column;
+}
+
+</style>
 </head>
+
 <body>
-<h1>File Uploader</h1>
+<div class="page-wrapper">
+<div class="header">
+<h1>Photo Generator</h1>
+</div>
 <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
-	<input type="file" name="video" accept="video/*" multiple>
-	<input type="submit" value="send">
+	<input type="file" style="font-size: 14px" name="video" accept="video/*" multiple>
+	<input type="submit" style="font-size: 14px" value="send">
 </form>
 
 {% if msg %}
 <h1 id="msg">{{ msg }}</h1>
-{% if image_list %}
-{% for image in image_list %}
-<img src="{{ image }}">
-{% endfor %}
-{% endif %}
+<div class="image-list">
+	{% if image_list %}
+	{% for image in image_list %}
+		<img src="{{ image }}" style="margin-bottom: 15px">
+	{% endfor %}
+	{% endif %}
+</div>
 {% endif %}
 
+</div>
 </body>
 </html>
+

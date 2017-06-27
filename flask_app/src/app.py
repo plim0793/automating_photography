@@ -1,17 +1,29 @@
+#### LIBRARY IMPORTS ####
 import os
+import subprocess
 from flask import Flask, render_template, request
 import cv2
 import numpy as np
-import keras
-import skvideo.io
+import imageio
 import datetime
 import re
+import shutil
+import uuid
+from sklearn.metrics.pairwise import cosine_similarity
+import logging
+
 import tensorflow as tf
 from keras import backend as K
 import keras
-import logging
+from keras.models import Sequential
+from keras import layers
+from keras.layers.core import Flatten, Dense, Dropout, Activation
+from keras.optimizers import SGD
+from keras.models import Model
+
 K.set_image_dim_ordering('tf')
 
+#### SET LOGGING ####
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
@@ -24,6 +36,35 @@ formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(messag
 handler.setFormatter(formatter)
 
 logger.addHandler(handler)
+
+#### HELPER FUNCTIONS ####
+def split_model(model):
+    '''
+    DESCRIPTION:
+        - Splits the top layer of the model with the rest of the model.
+    INPUT:
+        - model should be pretrained.
+    OUTPUT:
+        - Returns the bottom_layers and a newly created top_layer.
+    '''
+    bottom_layers = model
+    bottom_layers.layers.pop()
+    bottom_layers.layers.pop()
+    inp = bottom_layers.input
+    out = bottom_layers.layers[-1].output
+
+    bottom_layers = Model(inp, out)
+    
+    top_layer = Sequential()
+    top_layer.add(Dropout(0.5, input_shape=bottom_layers.output_shape))
+    top_layer.add(Dense(1))
+    top_layer.add(Activation(activation='sigmoid'))
+
+    top_layer.compile(optimizer=SGD(lr=0.0001, momentum=0.9),
+                loss='binary_crossentropy', metrics=['accuracy'])
+    
+    return bottom_layers, top_layer
+
 
 def get_frames(file_path, top_layer, bottom_layers, path, sim_threshold, good_threshold, consecutive):
     '''
@@ -68,7 +109,6 @@ def get_frames(file_path, top_layer, bottom_layers, path, sim_threshold, good_th
         
         if curr_feat_vec == []:
             curr_feat_vec = feat_vec
-
         if cosine_similarity(curr_feat_vec, feat_vec) > sim_threshold or len(feature_vec_list) == 0:
             feature_vec_list.append(feat_vec)
             orig_frames.append(frame)
@@ -125,13 +165,16 @@ def get_frames(file_path, top_layer, bottom_layers, path, sim_threshold, good_th
     return good_frames
 
 
+#### APP ####
 __author__ = 'paul'
 
 app = Flask(__name__)
 model = keras.models.load_model('model.h5')
 print('MODEL LOADED')
 graph = tf.get_default_graph()
-
+SIM_THRESHOLD = 0.50
+GOOD_THRESHOLD = 0.95
+CONSECUTIVE = 300
 
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 print(APP_ROOT)
@@ -143,29 +186,37 @@ def upload():
     image_list = []
     target = os.path.join(APP_ROOT, "videos/")
     print("TARGET: ", target)
-    if not os.path.isdir(target):
-        os.mkdir(target)
 
-    for file in request.files.getlist("video"):
-        print(file.filename)
-        filename = file.filename
-        destination = os.path.join(target, filename)
-        file.save(destination)
-        print("DESTINATION: ", destination)
+    if request.method == 'POST':
+        if not os.path.isdir(target):
+            os.mkdir(target)
+
+        for file in request.files.getlist("video"):
+            print(file.filename)
+            filename = file.filename
+            destination = os.path.join(target, filename)
+            file.save(destination)
+            print("DESTINATION: ", destination)
 	
-        print("VALID DESTINATION: ", os.path.isfile(destination))
-        if os.path.isfile(destination):
-            msg = "Upload Complete"
-            print(msg)
+            print("VALID DESTINATION: ", os.path.isfile(destination))
+            if os.path.isfile(destination):
+                msg = "Here are the Best Photos"
+                print(msg)
 		
-            print("BEFORE GET_FRAMES: ")
-            print(datetime.datetime.now())
-            with graph.as_default():
-                bot, top = split_model(model=model)
-                good_frames = get_frames(destination,top_layer=top, bottom_layers=bot, path='static/images/') 
-                print("AFTER GET_FRAMES: ")
+                print("BEFORE GET_FRAMES: ")
                 print(datetime.datetime.now())
-                image_list = ['static/images/' + f for f in listdir('static/images/') if isfile(join('static/images/', f))]
+                with graph.as_default():
+                    bot, top = split_model(model=model)
+                    good_frames = get_frames(destination,\
+					top_layer=top,\
+					bottom_layers=bot,\
+					path='static/images/',\
+					sim_threshold=SIM_THRESHOLD,\
+					good_threshold=GOOD_THRESHOLD,\
+					consecutive=CONSECUTIVE) 
+                    print("AFTER GET_FRAMES: ")
+                    print(datetime.datetime.now())
+                    image_list = ['static/images/' + f for f in os.listdir('static/images/') if os.path.isfile(os.path.join('static/images/', f))]
 
     return render_template('upload.html', msg=msg, image_list=image_list)
 
