@@ -178,7 +178,7 @@ CONSECUTIVE = 300
 
 APP_ROOT = os.path.dirname(os.path.abspath(__file__))
 print(APP_ROOT)
-@app.route("/", methods=["GET", "POST"])
+@app.route("/upload", methods=["GET", "POST"])
 def upload():
     msg = ""
     destination = ""
@@ -219,6 +219,12 @@ def upload():
                     image_list = ['static/images/' + f for f in os.listdir('static/images/') if os.path.isfile(os.path.join('static/images/', f))]
 
     return render_template('upload.html', msg=msg, image_list=image_list)
+
+@app.route("/", methods=["GET"])
+def index():
+
+    return render_template('index.html')
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
