@@ -233,3 +233,12 @@
 2017-06-27 01:28:15,777 - __main__ - WARNING - Frame could not be read.
 2017-06-27 01:28:15,777 - __main__ - WARNING - Frame could not be read.
 2017-06-27 01:28:15,777 - __main__ - INFO - Good Frames Count: 23
+2017-06-27 20:40:59,880 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 20:40:59,979 - __main__ - INFO - File Path: static/images/0000_7f104a59-8c19-4518-983d-0bd2608435db.jpg
+2017-06-27 20:42:25,981 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 20:42:26,032 - __main__ - INFO - File Path: static/images/0001_84e85e6e-1ecc-4702-9bc6-3669dfdbbd22.jpg
+2017-06-27 20:43:51,893 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 20:43:51,959 - __main__ - INFO - File Path: static/images/0002_b165b700-4331-4cee-bb79-4d9d0d528ed5.jpg
+2017-06-27 20:45:17,911 - __main__ - INFO - LENGTH OF CURRENT SCENE (CONSECUTIVE): 300
+2017-06-27 20:45:17,960 - __main__ - INFO - File Path: static/images/0003_52af4cac-0987-4ef2-91a7-29c79e6bcb9c.jpg
+2017-06-27 20:45:35,010 - __main__ - INFO - Good Frames Count: 4

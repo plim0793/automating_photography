@@ -1,36 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Photo Generator</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .jumbotron {
+	background-color: #94a4c3;
+	margin
+  }
+
+  .col-sm-4 {
+	text-align: center;
+	padding: 0px 40px 0px 40px;
+  }
+
+  .btn {
+	padding: 10px 20px;
+	font-size: 30px;
+	border-radius: 13px;
+	border-color: black;
+	border-width: 1.5px;
+	background-color: #d3dbea;	
+  }
+
+ a {
+	text-decoration: none;
+	color: black;
+  }
+
+  a:hover {
+	color:#00a0c6;
+	text-decoration: none;
+  }
+
+  img {
+	vertical-align: middle;
+	margin: 20px;
+  }
+
+  </style>
 </head>
 <body>
-
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <a class="navbar-brand" href="/" style="font-family: Merienda One">Photo Generator</a>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="/" style="font-size: 18px; font-family: PT Sans">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="/upload" style="font-size: 18px; font-family: PT Sans">Generator</a>
+      </div>
+  </div>
+</nav>
 <div class="jumbotron text-center">
-  <h1>My First Bootstrap Page</h1>
-  <p>Resize this responsive page to see the effect!</p> 
+  <h1 style="font-family: Merienda One">Photo Generator</h1>
+  <p style="margin-bottom: 45px">Never worry about bad photography again!</p> 
+  <a href="/upload" type="button" class="btn btn-outline-primary">Get Started</a>
 </div>
   
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <h3>Take a Video</h3>
+      <img src="static/images/video-camera-icon.ico" height="100" width="100">
+      <p>Transfer the video file to your computer.</p>    
     </div>
     <div class="col-sm-4">
-      <h3>Column 2</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <h3>Upload the Video</h3>
+      <img src="static/images/upload-icon.png" height="100" width="100">
+      <p>Click on <b>Get Started</b> to run the video file through the neural network.</p>
     </div>
     <div class="col-sm-4">
-      <h3>Column 3</h3>        
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+      <h3>Generate Photos</h3>
+      <img src="static/images/image-icon.png" height="100" width="100">        
+      <p>Save the generated photos for future use!</p>
     </div>
   </div>
 </div>

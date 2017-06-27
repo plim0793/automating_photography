@@ -4,25 +4,32 @@
 <head>
 <meta charset="UTF-8">
 <title>Upload</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Merienda+One' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet"> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 <style>
-.page-wrapper {
+.jumbotron {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida"; 
+	background-color: #94a4c3;
 }
 
 .header {
 	width: 100%;
 	text-align: center;
-	background-color: #237dde;
 	font-size: 28px;
 	margin-bottom: 15px;	
 }
 
 #msg {
-	font-size: 24px;
+	font-size: 40px;
 	margin-bottom: 15px;
+	font-family: 'PT Sans';
 }
 
 .image-list {
@@ -30,17 +37,51 @@
 	flex-direction: column;
 }
 
+a {
+        text-decoration: none;
+        color: black;
+}
+
+a:hover {
+        color:#00a0c6;
+        text-decoration: none;
+}
+
+.image-show {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+}
+
 </style>
 </head>
-
 <body>
-<div class="page-wrapper">
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <a class="navbar-brand" href="/" style="font-family: Merienda One">Photo Generator</a>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="/" style="font-size: 18px; font-family: PT Sans">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="/upload" style="font-size: 18px; font-family: PT Sans">Generator</a>
+      </div>
+  </div>
+</nav>
+<div class="jumbotron text-center">
 <div class="header">
-<h1>Photo Generator</h1>
+<h1 style="font-family: Merienda One; margin-bottom: 100px">Photo Generator</h1>
 </div>
-<form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
-	<input type="file" style="font-size: 14px" name="video" accept="video/*" multiple>
-	<input type="submit" style="font-size: 14px" value="send">
+</div>
+
+<div class="image-show">
+<form class="form-inline center-block" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+    <div class="input-group">
+        <label id="browsebutton" class="btn btn-default input-group-addon" for="my-file-selector" style="background-color:white">
+            <input id="my-file-selector" type="file" name="video" accept="video/*" multiple style="display:none;">
+            Browse
+        </label>
+        <input type="text" class="form-control" readonly="">
+    </div>
+    <button type="submit" class="btn btn-primary">Upload</button>
 </form>
 
 {% if msg %}
